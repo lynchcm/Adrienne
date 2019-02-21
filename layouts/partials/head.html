@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        
+        <meta name="description" content="{{ .Params.meta_description }}">
+        <meta property="og:url" content="{{ .Permalink }}" />
+        <meta property="og:title" content='Micro Boutique Branding{{ if ne .Title ("Micro Boutique Branding")}} - {{ .Title }}{{ end }}' />
+        <meta property="og:description" content="{{ .Params.meta_description }}" />
+        <meta property="og:image" content="{{ .Params.meta_og_image }}" />
+        
+        {{ $sass := resources.Get "style.scss" }}
+        {{ $options := (dict "outputStyle" "compressed") }}
+        {{ $style := $sass | resources.ToCSS $options }}
+        <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+
+        <title>{{ .Title }}</title>
+        <link rel="icon" href="/images/logo-favicon.png" type="image/png" sizes="51x64">
+        
+    </head>
+    <body>
+
+    <div id="menu-bar">
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="menu-toggle">
+            <div class="menu-toggle-button" id="menu-button">
+                <span id="open-menu">Menu</span>
+                <span id="close-menu">Close</span>
+            </div>
+        </label>
+        <ul id="menu-list">
+            <div class="menu-list-items">
+                <li class="capitals" id="about-link"><a href="/#about">About</a></li>
+                <li class="capitals" id="services-link"><a href="/#services">Services</a></li>
+                <li class="capitals" id="process-link"><a href="/#process">Process</a></li>
+                <li class="capitals" id="gallery-link"><a href="/#gallery">Gallery</a></li>
+                <li class="capitals" id="contact-link"><a href="/#contact">Contact</a></li>
+            </div>
+        </ul>
+    </div>

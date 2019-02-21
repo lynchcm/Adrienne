@@ -1,0 +1,168 @@
+{{ partial "head.html" . }}
+
+<div id="header-section">
+    <picture id="header-background">
+        <source srcset="/header-background-400w.webp 400w,
+                        /header-background-800w.webp 800w,
+                        /header-background-1600w.webp 1600w" type="image/webp">
+        <img srcset="/header-background-400w.jpg 400w,
+                     /header-background-800w.jpg 800w,
+                     /header-background-1600w.jpg 1600w"
+             src="/header-background-1600w.jpg">
+    </picture>
+    <h1>The Window Dresser</h1>
+    
+    <div id="header-text-container">
+        <div id="h1-replacement">
+            <span>The</span>
+            <span>Window</span>
+            <span>Dresser</span>
+        </div>
+
+        <h2>Custom curtains,<br>hand made in Buxton</h2>
+    </div>
+    
+    
+    
+</div>
+
+<div class="full-width intro">
+    <p>Shut out drafts and give your room the perfect finishing touch with made to measure curtains, hand sewn in my Buxton studio. From custom curtains to roman blinds with matching cushions, all curtains and accessories are hand sewn by me, Adrienne. Get in touch to tell me about your project.</p>
+</div>
+
+<div class="full-width about">
+    <div class="image-holder">
+        <img src="/sewing.jpg">
+    </div>
+    <div class="about-text">
+        <h2>About</h2>
+        <p>For over 12 years, I’ve been making made to measure curtains, blinds and soft furnishings. What started as a hobby has turned into a business and there’s nothing I love more than listening to the radio and working on a project in my Buxton studio. Having also worked as a hairdresser, I now bring my creativity to custom curtains, and that’s where the name ‘The Window Dresser’ came from.</p>
+    </div>
+</div>
+
+
+
+<div class="full-width testimonials-services">
+        
+<!--    <div class="services">-->
+        <div class="testimonials">
+            {{ partial "quote-mark.svg" . }}
+            <p id="quote">Amazing service - Adrienne was so easy to work with and gave great advice on picking the right fabric. The curtains and matching cushions look beautiful.</p>
+            <p>Lynn, Buxton</p>
+            {{ partial "quote-mark.svg" . }}
+        </div>
+        <div class="image-holder">
+            <img src="/image2.jpg">
+        </div>
+        <div class="services-text">
+            <h2>Services</h2>
+            <p>Tucked away in my Buxton studio, I make made to measure curtains, blinds and soft furnishings, working with a fabric of your choice. All curtains are interlined so can be a great way to keep older houses insulated. I can also make matching cushions or cover seat pads in the same material to tie the room together. From one set of curtains to eleven, I’ve worked on projects of all sizes &mdash; get in touch for a free consultation.</p>
+        </div>
+        
+<!--    </div>-->
+</div>
+
+<div class="full-width process">
+    <div class="image-holder">
+        <img src="/tape-measure.jpg">
+    </div>
+    <div class="process-text">
+        <h2>The Process</h2>
+        <p>Working in Buxton and the surrounding area, the first step is an initial chat and consultation. At this appointment, I also take any measurements needed and provide advice on the quantity and type of material that will work well for your project, as well as great local places to buy from. After you’ve found a material you love, I’ll get to work producing your curtains or blinds. On average it takes around XX weeks to produce a set of custom curtains or XX weeks for blinds.</p>
+    </div>
+    
+    <div class="row" id="process-row">
+        <div class="col-quarter" >
+            <div class="process-circle">
+                <img src="/mail-graphic.png">
+            </div>
+            <p class="process-step" id="process-1">Get in touch via email</p>
+        </div>
+        <div class="col-quarter" >
+            <div class="process-circle process-circle-desktop">
+                <img src="/tape-measure-graphic.png">
+            </div>
+            <p class="process-step" id="process-2">Initial consultation and measurements</p>
+        </div>
+        <div class="col-quarter">
+            <div class="process-circle">
+                <img src="/needle-graphic.png">
+            </div>
+            <p class="process-step" id="process-3">Fabric sourced and sewing begins</p>
+        </div>
+        <div class="col-quarter">
+            <div class="process-circle process-circle-desktop">
+                <img src="/curtain-graphic.png">
+            </div>
+            <p class="process-step" id="process-4">Finished curtains delivered to you</p>
+        </div>
+        <img class="arrow" id="arrow1" src="/arrow.png">
+        <img class="arrow" id="arrow2" src="/arrow.png">
+        <img class="arrow" id="arrow3" src="/arrow.png">
+    </div>
+    
+    
+</div>
+
+<div class="full-width gallery-track">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img id='0' src="/gallery-1.png">
+        </div>
+        <div class="gallery-item">
+            <img id='1' src="/gallery-2.png">
+        </div>
+        <div class="gallery-item">
+            <img id='2' src="/gallery-3.png">
+        </div>
+        <div class="gallery-item">
+            <img id='3' src="/gallery-4.png">
+        </div>
+        <div class="gallery-item">
+            <img id='4' src="/gallery-1.png">
+        </div>
+    </div>
+</div>
+
+<div id="swipe-photo-gallery-container">
+    <div class="swipe-photo-gallery" id="swipe-photo-gallery-id">
+        <img src="/gallery-1.png">
+        <img src="/gallery-2.png">
+        <img src="/gallery-3.png">
+        <img src="/gallery-4.png">
+        <img src="/gallery-1.png">
+    </div>
+    <div class="swipe-gallery-controls">
+        <div class="close-gallery">
+            <div class="close-gallery-cross cross-1"></div>
+            <div class="close-gallery-cross cross-2"></div>
+        </div>
+        <div class="slide-scroll-controls">
+            <div class="scroll-arrow" id="scroll-left">
+                {{ partial "scroll.svg" }}
+            </div>
+            <div class="scroll-arrow" id="scroll-right">
+                {{ partial "scroll.svg" }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-width contact-form">
+    <h2>Get in Touch</h2>
+    <p id="contact-text">Complete the form or email <a href="mailto:adrienne@thewindowdresser.com">adrienne@thewindowdresser.com</a> to set up an initial consultation.</p>
+    <form action="https://formspree.io/your@email.com" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email">
+        <label for="message">Message</label>
+        <textarea id="message" name="Message"></textarea>
+        <button>SEND</button>
+        <input type="hidden" name="_next" value="https://mysite.com/thanks.html"/>
+    </form>
+    <p id="made-by-micro">Made by <a href="https://wearemicro.co">Micro</a></p>
+</div>
+
+{{ partial "footer.html" . }}
