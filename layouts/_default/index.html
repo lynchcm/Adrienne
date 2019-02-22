@@ -30,7 +30,7 @@
     <p>Shut out drafts and give your room the perfect finishing touch with made to measure curtains, hand sewn in my Buxton studio. From custom curtains to roman blinds with matching cushions, all curtains and accessories are hand sewn by me, Adrienne. Get in touch to tell me about your project.</p>
 </div>
 
-<div class="full-width about">
+<div class="full-width about" id="about">
     <div class="image-holder">
         <img src="/sewing.jpg">
     </div>
@@ -54,7 +54,7 @@
         <div class="image-holder">
             <img src="/image2.jpg">
         </div>
-        <div class="services-text">
+        <div class="services-text" id="services">
             <h2>Services</h2>
             <p>Tucked away in my Buxton studio, I make made to measure curtains, blinds and soft furnishings, working with a fabric of your choice. All curtains are interlined so can be a great way to keep older houses insulated. I can also make matching cushions or cover seat pads in the same material to tie the room together. From one set of curtains to eleven, I’ve worked on projects of all sizes &mdash; get in touch for a free consultation.</p>
         </div>
@@ -62,7 +62,7 @@
 <!--    </div>-->
 </div>
 
-<div class="full-width process">
+<div class="full-width process" id="process">
     <div class="image-holder">
         <img src="/tape-measure.jpg">
     </div>
@@ -104,26 +104,35 @@
     
 </div>
 
-<div class="full-width gallery-track">
+<div class="full-width gallery-wrapper" id="gallery">
     <h2>Gallery</h2>
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img id='0' src="/gallery-1.png">
-        </div>
-        <div class="gallery-item">
-            <img id='1' src="/gallery-2.png">
-        </div>
-        <div class="gallery-item">
-            <img id='2' src="/gallery-3.png">
-        </div>
-        <div class="gallery-item">
-            <img id='3' src="/gallery-4.png">
-        </div>
-        <div class="gallery-item">
-            <img id='4' src="/gallery-1.png">
+    <div class="full-width gallery-track">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img id='0' src="/gallery-1.png">
+            </div>
+            <div class="gallery-item">
+                <img id='1' src="/gallery-2.png">
+            </div>
+            <div class="gallery-item">
+                <img id='2' src="/gallery-3.png">
+            </div>
+            <div class="gallery-item">
+                <img id='3' src="/gallery-4.png">
+            </div>
+            <div class="gallery-item">
+                <img id='4' src="/gallery-1.png">
+            </div>
         </div>
     </div>
+    <div class="scroll-buttons scroll-left">
+        {{ partial "scroll.svg" }}
+    </div>
+    <div class="scroll-buttons scroll-right">
+        {{ partial "scroll.svg" }}
+    </div>
 </div>
+<div id="hide-scrollbar"></div>
 
 <div id="swipe-photo-gallery-container">
     <div class="swipe-photo-gallery" id="swipe-photo-gallery-id">
@@ -149,7 +158,7 @@
     </div>
 </div>
 
-<div class="full-width contact-form">
+<div class="full-width contact-form" id="contact">
     <h2>Get in Touch</h2>
     <p id="contact-text">Complete the form or email <a href="mailto:adrienne@thewindowdresser.com">adrienne@thewindowdresser.com</a> to set up an initial consultation.</p>
     <form action="https://formspree.io/your@email.com" method="POST">
