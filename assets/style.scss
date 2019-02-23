@@ -717,11 +717,9 @@ body {
 
 .gallery-track {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
     margin-bottom: 100px;
     position: relative;
-    
-    
-
 }
 
 #hide-scrollbar {
@@ -738,7 +736,6 @@ body {
 //    border: 1px solid red;
     display: flex;
     justify-content: space-around;
-    -webkit-overflow-scrolling: touch;
     
     .gallery-item {
 //        float: left;
