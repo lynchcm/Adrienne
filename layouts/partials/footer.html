@@ -10,6 +10,8 @@
         });
     </script>
     <script>
+        
+        {{ if eq .Title "Buxton Window Dresser" }}
         $(document).ready(function() {
             
             $('#menu-checkbox').on('click touch', function() {
@@ -172,6 +174,7 @@
 
       
         });
+        {{ end }}
     </script>
         
   </body>
